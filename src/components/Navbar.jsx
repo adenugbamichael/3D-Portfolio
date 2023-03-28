@@ -63,7 +63,10 @@ const Navbar = () => {
               <li
                 className='pl-[15px]'
                 key={link.id}
-                onClick={() => setActive(link.title)}
+                onClick={() => {
+                  setToggle(!toggle)
+                  setActive(link.title)
+                }}
               >
                 <a
                   className={`${
