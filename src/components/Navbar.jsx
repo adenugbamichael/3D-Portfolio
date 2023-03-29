@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState("false")
   return (
     <nav
-      className={` ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-back`}
+      className={` ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className='w-full flex items-center justify-between max-w-7xl mx-auto'>
         <Link
@@ -47,6 +47,7 @@ const Navbar = () => {
           ))}
         </ul>
         {/* Mobile Navigation Bar */}
+        {/* Mobile Navigation Bar */}
         <div className=' flex flex-1 sm:hidden justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -57,8 +58,9 @@ const Navbar = () => {
           <ul
             className={` ${
               !toggle ? "hidden" : "flex"
-            } list-none flex animate myeffect flex-col justify-center  items-center max-h-[100vh] m-0 p-0 overflow-hidden fixed top-0 bottom-0 left-0 right-0 z-2 bg-cover bg-no-repeat bg-center bg-hero-pattern`}
+            } list-none flex animate myeffect flex-col fixed justify-center  items-center max-h-[100vh] m-0 p-0 overflow-hidden top-0 bottom-0 left-0 right-0 z-2 bg-cover bg-no-repeat bg-center bg-hero-pattern`}
           >
+            {/*  */}
             {navLinks.map((link) => (
               <li
                 className='pl-[15px]'
