@@ -54,7 +54,7 @@ const ProjectCard = ({
         </div>
         <div className='flex flex-wrap gap-2'>
           {tags.map((tag) => (
-            <code key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <code key={tag.name} className={`text-[12px] ${tag.color}`}>
               {tag.name}
             </code>
           ))}
@@ -68,7 +68,9 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-secondary sm:text-[14px]`}>
+        <p
+          className={`${styles.sectionSubText} text-secondary xs:text-[12px] sm:text-[14px]`}
+        >
           Selected works
         </p>
         <h2 className={`${styles.sectionHeadText} text-tertiary`}>Projects.</h2>
