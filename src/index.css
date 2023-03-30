@@ -62,6 +62,9 @@ label,
 p {
   font-family: Gothic A1 !important;
 }
+.cText {
+  font-weight: bold !important;
+}
 
 .hash-span {
   margin-top: -100px;

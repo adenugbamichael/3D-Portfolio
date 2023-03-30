@@ -8,7 +8,9 @@ module.exports = {
         primary: "#1e1e20",
         secondary: "rgba(235, 235, 245, .6)",
         tertiary: "rgba(255, 255, 245, .86)",
+
         boxes: "#252529",
+        rectangle: "#4B5563",
         back: "#000000",
       },
       screens: {

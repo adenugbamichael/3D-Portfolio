@@ -75,7 +75,7 @@ const Navbar = () => {
                     active === link.title
                       ? "text-secondary mobi--current"
                       : "text-tertiary"
-                  } text-[1rem]] cursor-pointer relative after:bg-tertiary fontsize ml-[2px] p-[1rem] inline-block mobi font-[300]`}
+                  } text-[1rem]] cursor-pointer relative after:bg-tertiary fontsize ml-[2px] p-[1rem] inline-block mobi font-[200]`}
                   href={`#${link.id}`}
                 >
                   {link.title}
