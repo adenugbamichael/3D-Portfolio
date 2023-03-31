@@ -18,10 +18,3 @@
                   <br/>
                   <div>
                         🌎&nbsp; <code>ThreeJS - a powerful 3D D Portfolio website built with Three.js <a href="https://www.linkedin.com/in/adenugbamichael/">React.js</a> <code>TailwindCSS</code> <code>Framer Motion</code> <code>TailwindCSS</code><br/>
-                      
-                  </div>
-                  <br/>
-            </td>
-      </tr>
-
-</table>
