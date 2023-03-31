@@ -45,7 +45,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-2 text-secondary text-[17px] md:text-[16px] sm:text-[14px] xs:text-[12px] max-w-3xl lg:leading-[1.5rem] md:leading-[1.5rem] sm:leading-[1.5rem]'
+        className='mt-2 text-secondary max-w-3xl lg:leading-[1.5rem] md:leading-[1.5rem] sm:leading-[1.5rem]'
       >
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and Nextjs.

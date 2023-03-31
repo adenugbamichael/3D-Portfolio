@@ -54,7 +54,7 @@ h2 span,
 h3 span,
 [class*="Button"] {
   font-family: "Mortend", sans-serif !important;
-  -webkit-font-smoothing: subpixel-antialiased;
+  /* -webkit-font-smoothing: subpixel-antialiased; */
 }
 
 a,

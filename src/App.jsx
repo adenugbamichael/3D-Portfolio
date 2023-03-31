@@ -15,19 +15,15 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary '>
+      <div className='relative z-0 bg-[#161618] '>
         <div className=' bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero />
         </div>
         <About />
-        <div className='bg-[#1A1A1A] w-full h-full '>
-          <Experience />
-        </div>
+        <Experience />
         {/* <Tech /> */}
-        <div className='bg-[#161618] w-full h-full'>
-          <Works />
-        </div>
+        <Works />
         <Feedbacks />
         <div className='relative z-0'>
           <Contact />

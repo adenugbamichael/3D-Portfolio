@@ -46,7 +46,7 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className='mt-5'>
+        <div className='mt-5 text-[14px]'>
           <h3>{name}</h3>
           <p className='font-[300] text-[14px] text-secondary '>
             {description}
@@ -76,10 +76,10 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText} text-tertiary`}>Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className='w-full flex '>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='text-secondary text-[17px] md:text-[16px] sm:text-[14px] xs:text-[12px] max-w-3xl lg:leading-[1.5rem] md:leading-[1.5rem] sm:leading-[1.5rem]'
+          className='text-secondary mt-3  max-w-3xl lg:leading-[1.5rem] md:leading-[1.5rem] sm:leading-[1.5rem]'
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -87,7 +87,7 @@ const Works = () => {
           ability to solve complex problems
         </motion.p>
       </div>
-      <div className='mt-29 flex flex-wrap gap-7'>
+      <div className=' mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
