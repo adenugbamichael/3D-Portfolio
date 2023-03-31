@@ -15,8 +15,45 @@ const Contact = () => {
     message: "",
   })
   const [loading, setLoading] = useState(false)
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target
+
+    setForm({ ...form, [name]: value })
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs
+      .send(
+        "service_p0ucxe9",
+        "template_9gmp9ch",
+        {
+          form_name: form.name,
+          to_name: "Michael",
+          from_email: form.email,
+          to_email: "contact@adenugbamicke@gmail.com",
+          message: form.message,
+        },
+        "eRToXPFH6SmYlIC2A"
+      )
+      .then(
+        () => {
+          setLoading(false)
+          alert("Thank you. I will get back to you as soon possible. ")
+
+          setForm({ name: "", email: "", message: "" })
+        },
+        (error) => {
+          setLoading(false)
+
+          console.log(error)
+
+          alert("Something went wrong. Please try again")
+        }
+      )
+  }
+
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
@@ -86,4 +123,4 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact, "")
+export default SectionWrapper(Contact, "contact")
