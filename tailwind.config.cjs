@@ -9,6 +9,7 @@ module.exports = {
         secondary: "rgba(235, 235, 245, .6)",
         tertiary: "rgba(255, 255, 245, .86)",
         back: "#000000",
+
         boxes: "#252529",
         rectangle: "#4B5563",
       },
