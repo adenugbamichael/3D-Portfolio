@@ -66,13 +66,13 @@ p {
   font-weight: bold !important;
 }
 
-.sticky-social {
+/* .sticky-social {
   position: fixed;
   right: 0;
   top: 50%;
   transform: translateY(-50%) !important;
   z-index: 999;
-}
+} */
 
 .hash-span {
   margin-top: -100px;
